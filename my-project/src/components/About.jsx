@@ -15,7 +15,7 @@ function About() {
         </div>
         <div className="w-full lg:w-1/2 mt-7">
           <div className="flex justify-center lg:justify-start">
-            <p className='my-2 max-w-xl py-6'>{ABOUT_TEXT}</p>
+            <p className='my-2 max-w-xl py-6/'>{ABOUT_TEXT}</p>
           </div>
         </div>
       </div>
