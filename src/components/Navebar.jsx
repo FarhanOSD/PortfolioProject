@@ -18,8 +18,6 @@ function Navebar() {
       </div>
 
       <div className="m-8 flex items-center justify-center gap-4">
-        
-
         <a href="https://x.com/Tamkin325819"></a>
         <FaSquareXTwitter size={24} />
 
