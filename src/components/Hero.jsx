@@ -1,7 +1,7 @@
 import React from 'react'
 import { HERO_CONTENT } from "../comone"
 
-import me from '../assets/me.png'
+import me from '../assets/pigupe.jpg'
 import { motion } from 'motion/react';
 
 const container = (delay) => ({
@@ -25,7 +25,7 @@ function Hero() {
               animate="visible"
               className="pb-16 text-6xl font-thin tracking-tight lg:mt-16 lg:text-8xl"
             >
-              Farhan Ahmed
+              Farkan Ahmed
             </motion.h1>
             <motion.span
               variants={container(0.5)}
