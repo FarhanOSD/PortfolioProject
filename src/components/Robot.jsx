@@ -62,7 +62,7 @@ function Kamdo(props) {
   const head = useRef();
   const stripe = useRef();
   const light = useRef();
-  const { nodes, materials } = useGLTF('/s2wt_kamdo_industrial_divinities.glb');
+  const { nodes, materials } = useGLTF('https://sketchfab.com/models/ae6ba586eb364ab293f6d1e0a04c4026/embed?annotations_visible=0&autospin=-0.1&autostart=1&camera=0&double_click=0&internal=1&max_texture_size=1024&orbit_constraint_pan=1&orbit_constraint_zoom_in=40&orbit_constraint_zoom_out=60&preload=1&scrollwheel=0&sound_enable=0&transparent=1&ui_animations=0&ui_annotations=0&ui_ar=1&ui_ar_help=0&ui_color=white&ui_fadeout=0&ui_fullscreen=1&ui_help=0&ui_infos=0&ui_inspector=0&ui_settings=0&ui_stop=0&ui_theatre=0&ui_theme=dark&ui_vr=0&ui_watermark=0');
   useFrame((state, delta) => {
     const t = (1 + Math.sin(state.clock.elapsedTime * 2)) / 2;
     stripe.current.color.setRGB(2 + t * 20, 2, 20 + t * 50);
@@ -123,4 +123,4 @@ function Kamdo(props) {
   );
 }
 
-useGLTF.preload('/s2wt_kamdo_industrial_divinities.glb');
+useGLTF.preload('https://sketchfab.com/models/ae6ba586eb364ab293f6d1e0a04c4026/embed?annotations_visible=0&autospin=-0.1&autostart=1&camera=0&double_click=0&internal=1&max_texture_size=1024&orbit_constraint_pan=1&orbit_constraint_zoom_in=40&orbit_constraint_zoom_out=60&preload=1&scrollwheel=0&sound_enable=0&transparent=1&ui_animations=0&ui_annotations=0&ui_ar=1&ui_ar_help=0&ui_color=white&ui_fadeout=0&ui_fullscreen=1&ui_help=0&ui_infos=0&ui_inspector=0&ui_settings=0&ui_stop=0&ui_theatre=0&ui_theme=dark&ui_vr=0&ui_watermark=0');
