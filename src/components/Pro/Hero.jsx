@@ -15,6 +15,7 @@ import HeroCamera from '../HeroCamera';
 import Button from '../Button';
 
 
+
 function Hero() {
   const isMobile = useMediaQuery({maxWidth:768})
   // const x = useControls('HackerRoom', {
@@ -57,9 +58,12 @@ function Hero() {
   const isSmall = useMediaQuery({maxWidth:440})
   const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 1024 })
   
-  const sizes = calculateSizes(isSmall,isMobile,isTablet)
+  const sizes = calculateSizes(isSmall, isMobile, isTablet)
+  
+  
   return (
     <section className="min-h-screen w-full flex flex-col relative">
+      
       <div className="w-full mx-auto flex flex-col sm:mt-36 mt-20 c-space gap-3">
         <p className="sm:text-3xl text-2xl font-medium text-white text-center font-generalsans">
           Hi, <span className="waving-hand">✋</span> I'm Farhan Ahmed Tamkin

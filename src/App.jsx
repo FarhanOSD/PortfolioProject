@@ -10,7 +10,20 @@ import Experience from './components/Experience/Experience'
 import Developer from './components/Experience/Developer'
 import Tech from './components/Clients/Tech'
 
+
+import { useLocation } from 'react-router-dom';
+import { useEffect } from 'react';
+import ReactGA from 'react-ga4';
+
 function App() {
+  const location = useLocation();
+
+  useEffect(() => {
+    ReactGA.send({
+      hitType: 'pageview',
+      page: location.pathname + location.search,
+    });
+  }, [location]);
   return (
     <div className="max-w-7xl mx-auto">
       <Navbar />
