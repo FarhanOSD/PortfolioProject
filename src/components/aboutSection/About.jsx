@@ -83,15 +83,9 @@ function About() {
                 I&apos;m based in Gazipur, Dhaka and open to remote work
                 worldwide.
               </p>
-              <a href="https://docsend.com/v/kjjp3/farhan-ahmed-tamkin-portfolio">
-                <Button
-                  name="Portfolio"
-                  isBeam
-                  containerClass="w-full mt-10"
-                />
+              <a href="https://docsend.com/v/kjjp3/farhan-ahmed-tamkin-cv">
+                <Button name="Portfolio" isBeam containerClass="w-full mt-10" />
               </a>
-
-              
             </div>
           </div>
         </div>
